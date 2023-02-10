@@ -1,0 +1,16 @@
+{
+  "name": "it_studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"stylelint": "npx stylelint \"source/css/*.css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^14.16.1",
+    "stylelint-config-htmlacademy": "^1.1.4"
+  }
+}
