@@ -1,0 +1,68 @@
+/* ******Медиа запросы****** */
+@media (max-width: 980px) {
+  /* ******Секция features****** */
+  .item-features {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  /* ******Секция promo****** */
+  .promo {
+    padding: 230px 0 250px;
+  }
+
+  .promo_title {
+    font-size: calc(48px * 0.75);
+    line-height: calc(64px * 0.75);
+  }
+
+  /* ******Секция features****** */
+  .features__items {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: calc(48px - 45px);
+  }
+
+  .features__item {
+    max-width: 260px;
+    margin-bottom: 45px;
+  }
+
+  .item-features::before {
+    margin-right: 0;
+  }
+
+  .item-features__content {
+    padding-top: 25px;
+  }
+
+  /* ******Секция our-projects****** */
+  .our-projects__items {
+    margin-bottom: calc(50px - 30px);
+  }
+
+  .our-projects__item {
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ******Секция promo****** */
+  .promo {
+    padding: 180px 0 200px;
+  }
+
+  .promo_title {
+    font-size: calc(48px * 0.6);
+    line-height: calc(64px * 0.6);
+  }
+
+  /* ******Секция our-projects****** */
+  .our-projects__item {
+    flex: 0 0 100%;
+  }
+}
