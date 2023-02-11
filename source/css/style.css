@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-page {
+  flex: 1 0 auto;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+._container {
+  max-width: calc(1110px + 20px);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+:root {
+  --blue: #4985ff;
+  --gray: #999999;
+  --light-gray: #f6f6f8;
+}
+
+
+/* ******Секция promo****** */
+.promo {
+  padding: 319px 0 335px;
+  background-image: url("../img/promo/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.promo__inner > *:last-child {
+  margin-bottom: 0;
+}
+
+.promo__subtitle {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo_title {
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ******Переиспользуемые элементы****** */
+.big-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+  min-width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background: var(--blue);
+  border-radius: 30px;
+}
+
+/* ******Медиа запросы****** */
+@media (max-width: 980px) {
+  /* … */
+}
+
+@media (max-width: 650px) {
+  /* ******Секция promo****** */
+  .promo {
+    padding: 239px 0 250px;
+  }
+
+  .promo__subtitle {
+    font-size: calc(16px * 0.75);
+    line-height: calc(20px * 0.75);
+  }
+
+  .promo_title {
+    font-size: calc(48px * 0.75);
+    line-height: calc(64px * 0.75);
+  }
+
+  /* ******Переиспользуемые элементы****** */
+  .big-link {
+    font-size: calc(16px * 0.75);
+    line-height: calc(20px * 0.75);
+  }
+}
+
+@media (max-width: 480px) {
+  /* ******Секция promo****** */
+  .promo {
+    padding: 190px 0 200px;
+  }
+
+  .promo__subtitle {
+    font-size: calc(16px * 0.6);
+    line-height: calc(20px * 0.6);
+  }
+
+  .promo_title {
+    font-size: calc(48px * 0.6);
+    line-height: calc(64px * 0.6);
+  }
+
+  /* ******Переиспользуемые элементы****** */
+  .big-link {
+    font-size: calc(16px * 0.6);
+    line-height: calc(20px * 0.6);
+  }
+}
