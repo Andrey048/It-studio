@@ -114,7 +114,6 @@ body {
 }
 
 .item-features {
-  position: relative;
   display: flex;
 }
 
@@ -147,10 +146,104 @@ body {
   color: #999999;
 }
 
+/* ******Секция about****** */
+.about {
+  padding: 97px 0 61px;
+  padding-top: 97px;
+  padding-bottom: calc(61px - 30px);
+  background-color: var(--light-gray);
+}
+
+.about__header {
+  display: flex;
+  padding-bottom: 90px;
+}
+
+.about__header::after {
+  content: "";
+  display: block;
+  width: 520px;
+  height: 420px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-image: url("../img/about/picture.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about__header-text {
+  padding: 52px 121px 53px 0;
+}
+
+.about__title {
+  margin-bottom: 23px;
+  color: #323232;
+}
+
+.about__text {
+  margin-bottom: 25px;
+  color: #999999;
+}
+
+.about__more {
+  text-decoration-line: underline;
+  color: var(--blue);
+}
+
+.about__footer {
+  padding-top: 68px;
+  border-top: 1px solid #e0e0e0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-data-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 -50px;
+  list-style: none;
+}
+
+.about-data-item {
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+
+.item-data__number {
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  color: #000000;
+}
+
+.item-data__number::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  transform: translateY(2px);
+  background-image: url("../img/about/statistics-icon.svg");
+}
+
+.item-data__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+
 /* ******Секция our-projects****** */
 .our-projects {
   padding: 100px 0 130px;
   background-color: var(--light-gray);
+  border: #000000 1px solid;
 }
 
 .our-projects__inner {
@@ -180,6 +273,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px 48px;
+  width: 100%;
 }
 
 .our-projects__item {
@@ -191,6 +285,7 @@ body {
 .our-projects__item img {
   display: block;
   width: 100%;
+  border-radius: 10px;
 }
 
 /* ******Переиспользуемые элементы****** */
