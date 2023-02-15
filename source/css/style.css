@@ -156,7 +156,7 @@ body {
 
 .about__header {
   display: flex;
-  padding-bottom: 90px;
+  padding-bottom: 73px;
 }
 
 .about__header::after {
@@ -183,11 +183,6 @@ body {
 .about__text {
   margin-bottom: 25px;
   color: #999999;
-}
-
-.about__more {
-  text-decoration-line: underline;
-  color: var(--blue);
 }
 
 .about__footer {
@@ -239,11 +234,75 @@ body {
   color: #999999;
 }
 
+/* ******Секция specializations****** */
+.specializations {
+  padding: 97px 0 85px;
+}
+
+.specializations__header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.specializations__title {
+  max-width: 550px;
+}
+
+.specializations__link {
+  margin-left: auto;
+  margin-top: 23px;
+}
+
+.specializations__items {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.specializations__item {
+  flex: 0 0 33.33%;
+  padding: 0 15px;
+  margin-bottom: 85px;
+}
+
+.specializations__item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 85%;
+  background-image: url("../img/specializations/picture.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+}
+
+.item-specialization__content {
+  padding-top: 40px;
+}
+
+.item-specialization__title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.item-specialization__title span {
+  color: var(--blue);
+}
+
+.item-specialization__text {
+  margin-bottom: 25px;
+}
+
 /* ******Секция our-projects****** */
 .our-projects {
   padding: 100px 0 130px;
   background-color: var(--light-gray);
-  border: #000000 1px solid;
 }
 
 .our-projects__inner {
@@ -288,12 +347,115 @@ body {
   border-radius: 10px;
 }
 
+/* ******Секция footer****** */
+.footer {
+  padding: 70px 0 30px;
+}
+
+.footer__header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  width: 100%;
+}
+
+.footer__col {
+  flex: 0 0 25%;
+  padding: 0 16px;
+}
+
+.col-footer__title {
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.col-footer__items {
+  margin-bottom: 63px;
+  list-style: none;
+}
+
+.col-footer__item {
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+}
+
+.col-footer__item:last-child {
+  margin-bottom: 0;
+}
+
+.col-footer__item a::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 6px;
+  margin-right: 12px;
+  background-image: url("../img/footer/arrow-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.col-footer__item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.col-footer__item--mail::before {
+  content: "";
+  transform: translateY(4px);
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+  background-image: url("../img/footer/mail-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.col-footer__item--phone::before {
+  content: "";
+  transform: translateY(4px);
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+  background-image: url("../img/footer/phone-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.col-footer__item--address::before {
+  content: "";
+  transform: translateY(2px);
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+  background-image: url("../img/footer/address-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__footer {
+  padding-top: 28px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer__copyright {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+  color: #999999;
+}
+
 /* ******Переиспользуемые элементы****** */
 .big-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 45px;
+  height: 45px;
   min-width: 200px;
   font-weight: 500;
   font-size: 16px;
@@ -303,6 +465,14 @@ body {
   text-decoration: none;
   background: var(--blue);
   border-radius: 30px;
+}
+
+.small-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: var(--blue);
 }
 
 .section-title {
