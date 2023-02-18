@@ -148,7 +148,7 @@ body {
   box-sizing: content-box;
 }
 
-.menu__item a:hover {
+.menu__item a[href]:hover {
   border-bottom: 2px solid #ffffff;
 }
 
@@ -211,63 +211,63 @@ body {
   color: #ffffff;
 }
 
-/* ******Секция features****** */
-.features {
+/* ******Секция services****** */
+.services {
   padding: 105px 0 105px;
 }
 
-.features__inner {
+.services__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.features__title {
+.services__title {
   max-width: 750px;
   margin-bottom: 35px;
   text-align: center;
   color: #323232;
 }
 
-.features__text {
+.services__text {
   max-width: 750px;
   margin-bottom: 63px;
   text-align: center;
   color: #999999;
 }
 
-.features__items {
+.services__items {
   width: 100%;
   margin: 0 -13px 48px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.features__item {
+.services__item {
   flex: 0 0 33.33%;
   padding: 0 13px;
   list-style: none;
 }
 
-.item-features {
+.item-services {
   display: flex;
 }
 
-.item-features::before {
+.item-services::before {
   content: "";
   display: block;
   width: 110px;
   height: 110px;
   margin-right: 17px;
   flex-shrink: 0;
-  background-image: url("../img/features/icon.svg");
+  background-image: url("../img/services/icon.svg");
 }
 
-.item-features__content {
+.item-services__content {
   padding-top: 46px;
 }
 
-.item-features__title {
+.item-services__title {
   margin-bottom: 12px;
   font-weight: 600;
   font-size: 18px;
@@ -275,7 +275,7 @@ body {
   color: #000000;
 }
 
-.item-features__text {
+.item-services__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
