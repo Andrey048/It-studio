@@ -13,8 +13,23 @@
   <link rel="stylesheet" href="./css/media-style.css">
 </head>
 <body class="page">
-  <header class="header">
-    <div class="_container">Header</div>
+  <header class="header" id="header-element">
+    <div class="_container">
+      <div class="header__inner">
+        <div class="header__menu-outer">
+          <nav class="menu">
+            <ul class="menu__items">
+              <li class="menu__item"><a href="#" data-scrollto="id">Главная</a></li>
+              <li class="menu__item"><a href="#">Наши проекты</a></li>
+              <li class="menu__item"><a href="#">Услуги</a></li>
+              <li class="menu__item"><a href="#">Новости</a></li>
+              <li class="menu__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button class="header__burger" id="burger-icon"></button>
+      </div>
+    </div>
   </header>
   <main class="main-page">
     <section class="promo">
@@ -172,7 +187,7 @@
             <li class="col-footer__item col-footer__item--address">Москва, Бульвар Ленина 33</li>
           </ul>
         </div>
-        <div class="footer__col footer__col--links col-footer">
+        <div class="footer__col footer__col--links footer__col--section-links col-footer">
           <h3 class="col-footer__title">Основные ссылки</h3>
           <ul class="col-footer__items">
             <li class="col-footer__item"><a href="#">Главная</a></li>
@@ -205,5 +220,7 @@
       </section>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
