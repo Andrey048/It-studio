@@ -3,6 +3,7 @@ import { deleteAsync } from 'del';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
+import imagemin, {gifsicle, mozjpeg, optipng} from 'gulp-imagemin';
 
 function clean () {
   return deleteAsync([ 'docs' ]);
@@ -17,6 +18,11 @@ function styles () {
 }
 function images () {
   return gulp.src('source/img/**/*.*')
+    .pipe(imagemin([
+      gifsicle({interlaced: true}),
+      mozjpeg({quality: 75, progressive: true}),
+      optipng({optimizationLevel: 5}),
+    ]))
     .pipe(gulp.dest('docs/img/'));
 }
 function copy () {
