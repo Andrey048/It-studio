@@ -626,3 +626,158 @@ body {
   font-size: 16px;
   line-height: 25px;
 }
+
+/* ******Медиа запросы****** */
+@media (max-width: 980px) {
+  /* ******Секция features****** */
+  .item-features {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ******Секция specializations****** */
+  .specializations__header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specializations__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .specializations__link {
+    margin-left: 0;
+  }
+
+  .specializations__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specializations__item {
+    max-width: 500px;
+  }
+
+  /* ******Секция about****** */
+  .about__header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__header-text {
+    max-width: 750px;
+    padding-right: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .about__header::after {
+    order: -1;
+  }
+
+  /* ******Секция footer****** */
+  .footer__col--contacts {
+    flex: 0 0 100%;
+  }
+
+  .footer__col--links {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 650px) {
+  /* ******Секция promo****** */
+  .promo {
+    padding: 230px 0 250px;
+  }
+
+  .promo_title {
+    font-size: calc(48px * 0.75);
+    line-height: calc(64px * 0.75);
+  }
+
+  /* ******Секция features****** */
+  .features__items {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: calc(48px - 45px);
+  }
+
+  .features__item {
+    max-width: 260px;
+    margin-bottom: 45px;
+  }
+
+  .item-features::before {
+    margin-right: 0;
+  }
+
+  .item-features__content {
+    padding-top: 25px;
+  }
+
+  /* ******Секция about****** */
+  .about__header::after {
+    width: 85%;
+    height: auto;
+    padding-bottom: 69%;
+  }
+
+  /* ******Секция our-projects****** */
+  .our-projects__items {
+    margin-bottom: calc(50px - 30px);
+  }
+
+  .our-projects__item {
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+  }
+
+  /* ******Секция footer****** */
+  .footer__header {
+    justify-content: space-between;
+  }
+
+  .footer__col {
+    flex: 0 0 45%;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ******Секция promo****** */
+  .promo {
+    padding: 180px 0 200px;
+  }
+
+  .promo_title {
+    font-size: calc(48px * 0.6);
+    line-height: calc(64px * 0.6);
+  }
+
+  /* ******Секция about****** */
+  .about__header-text {
+    padding-top: 0;
+  }
+
+  .about__header::after {
+    display: none;
+  }
+
+  /* ******Секция specializations****** */
+  .specializations__title {
+    font-size: calc(36px * 0.8);
+  }
+
+  /* ******Секция our-projects****** */
+  .our-projects__item {
+    flex: 0 0 100%;
+  }
+
+  /* ******Секция footer****** */
+  .footer__header {
+    display: block;
+  }
+}
