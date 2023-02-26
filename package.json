@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylelint": "npx stylelint \"source/css/*.css\" --ignore-pattern source/css/normalize.css"
+    "stylelint": "npx stylelint \"source/css/*.css\" --ignore-pattern source/css/normalize.css",
+	"build": "npx gulp"
   },
   "author": "",
   "license": "ISC",
