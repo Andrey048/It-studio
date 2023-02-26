@@ -629,6 +629,18 @@ body {
 
 /* ******Медиа запросы****** */
 @media (max-width: 980px) {
+  /* ******Секция services****** */
+  .services__items {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: calc(48px - 45px);
+  }
+
+  .services__item {
+    margin-bottom: 45px;
+    padding: 0;
+  }
+
   /* ******Секция features****** */
   .item-features {
     flex-direction: column;
@@ -755,6 +767,17 @@ body {
   .promo_title {
     font-size: calc(48px * 0.6);
     line-height: calc(64px * 0.6);
+  }
+
+  /* ******Секция services****** */
+  .services__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-services__content {
+    padding-top: 30px;
+    text-align: center;
   }
 
   /* ******Секция about****** */
